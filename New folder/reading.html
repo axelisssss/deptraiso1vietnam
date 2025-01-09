@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reading Practice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+   
+    <h1>English Learning Hub</h1>
+    <nav>
+      <a class="phu" href="english.html">Word of the Day</a>
+      <a class="phu" href="english.html">IELTS Practice</a>
+      <a class="phu" href="english.html">Vocabulary by Topic</a>
+      
+
+    </nav>
+  </header>
+
+  <!-- Nhúng Header -->
+  <div id="header-placeholder"></div>
+
+  <!-- Nội dung Reading -->
+  <main>
+    <h2>Reading Practice</h2>
+    <p>Practice your IELTS reading skills here.</p>
+    <!-- Thêm các nội dung reading -->
+  </main>
+
+  <script>
+    // Tải header từ file header.html
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+      });
+  </script>
+</body>
+</html>

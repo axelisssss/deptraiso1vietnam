@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Learning Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <style>
+    body {background-image:url(Capture.PNG);
+    
+      background-repeat: no-repeat; /* Không lặp lại ảnh */
+  background-position: center;  /* Căn giữa ảnh */
+  background-size: cover;      /* Phóng to ảnh cho vừa màn hình */
+  height: 100vh;               /* Chiều cao của trang chiếm toàn bộ màn hình */
+  margin: 0;                  }
+  </style>
+  <header>
+   
+    <h1>English Learning Hub</h1>
+    <nav>
+      <button onclick="showSection('word')">Word of the Day</button>
+      <button onclick="showSection('ielts')">IELTS Practice</button>
+      <button onclick="showSection('vocab')">Vocabulary by Topic</button>
+
+    </nav>
+  </header>
+
+  
+  <section id="word" class="content">
+    <h2>Word of the Day</h2>
+    <div id="word-display">
+      <h3 id="word-title"></h3>
+      <p id="word-meaning"></p>
+      <p id="word-example"></p>
+      <audio id="word-audio" controls></audio>
+      
+       
+    </div>
+  </section>
+
+<!-- ielts -->
+  <section id="ielts" class="content" style="display: none;">
+  <div class="headerr">
+    <style> headerr{ color: aliceblue;
+    }</style>
+    <nav>
+      <a href="listening.html">Listening Practice</a>
+      <a href="reading.html">Reading Practice</a>
+      <a href="ielts-docs.html">Tài liệu IELTS</a>
+      <a href="ielts-docs.html">Các nguồn học IELTS hiệu quả</a>
+    </nav>
+  </div>
+
+
+  </section>
+
+<!-- tu vung -->
+  <section id="vocab" class="content" style="display: none;">
+    <h2>Vocabulary by Topic</h2>
+    <div id="topic-container">
+      <button onclick="showTopic('fruits')">Fruits</button>
+      <button onclick="showTopic('animals')">Animals</button>
+    </div>
+    <div id="topic-content">
+      <!-- Dynamic content for topic goes here -->
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
