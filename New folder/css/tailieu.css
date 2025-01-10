@@ -1,0 +1,97 @@
+/* Reset CSS */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #74ebd5, #9face6);
+  color: #2c3e50;
+}
+
+/* Container chính */
+.ielts-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Box riêng biệt */
+.box {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Tiêu đề của box */
+.box h2 {
+  font-size: 1.8rem;
+  color: #34495e;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #6c5ce7;
+  padding-bottom: 5px;
+}
+
+/* Styling cho danh sách liên kết */
+.links-list {
+  list-style: none;
+  padding: 0;
+}
+
+.links-list li {
+  margin: 10px 0;
+}
+
+.links-list a {
+  text-decoration: none;
+  color: #6c5ce7;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.links-list a:hover {
+  color: #5a4bcf;
+}
+
+/* Styling cho PDF tài liệu */
+.pdf-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pdf-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ecf0f1;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pdf-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.pdf-item img {
+  width: 40px;
+  height: 40px;
+}
+
+.pdf-item a {
+  text-decoration: none;
+  color: #34495e;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.pdf-item a:hover {
+  color: #6c5ce7;
+}

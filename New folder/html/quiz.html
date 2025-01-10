@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocabulary Quiz</title>
+  
+  <link rel="stylesheet" href="../css/quiz.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <style>
+        body {background-image:url("../images/bg.PNG"); /* Ảnh nền */
+        
+          background-repeat: no-repeat; /* Không lặp lại ảnh */
+      background-position: center;  /* Căn giữa ảnh */
+      background-size: cover;      /* Phóng to ảnh cho vừa màn hình */
+      height: 100vh;               /* Chiều cao của trang chiếm toàn bộ màn hình */
+      margin: 0;                  }
+      </style>
+      <header>
+       
+        <h1>English Learning Hub</h1>
+        <nav>
+          <button onclick="showSection('word')">Word of the Day</button>
+    
+          <div class="dropdown">
+            <button>IELTS Practice</button>
+            <div class="dropdown-content">
+              <a href="..\html\listening.html">Listening Practice</a>
+              <a href="..\html\reading.html">Reading Practice</a>
+              <a href="..\html\tailieuielts.html">Tài liệu IELTS</a>
+              <a href="..\html\ielts-docs.html">Các nguồn học IELTS hiệu quả</a>
+            </div>
+          </div>
+            
+          <button onclick="showSection('vocab')">Vocabulary by Topic</button>
+          <button onclick="showSection('quiz')">Quiz</button>
+          
+          
+        
+    
+        </nav>
+      </header>
+
+      <div class="quiz-container">
+        <div class="question-box">
+          <h2>What is the meaning of "Canvas"?</h2>
+        </div>
+        <div class="answers">
+          <button class="answer">A. A painting surface</button>
+          <button class="answer">B. A type of clay</button>
+          <button class="answer correct">C. An art gallery</button>
+          <button class="answer">D. A brush technique</button>
+        </div>
+      </div>
+      <div class="result-box" style="display: none;"></div>
+      <div class="button-container">
+    <button class="next-button" style="display: none;">Next Question</button></div>
+  <script src="..\js\script.js"></script>
+</body>
+</html>

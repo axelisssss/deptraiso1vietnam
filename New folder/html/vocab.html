@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocabulary by Topic</title>
+  <link rel="stylesheet" href="..\css\voc.css">
+  <link rel="stylesheet" href="..\css\header.css">
+  <link rel="stylesheet" href="..\css\styles.css">
+</head>
+<body>
+  <style>
+    body {
+      background-image: url("../images/bg.PNG");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100vh;
+      margin: 0;
+    }
+  </style>
+  <header>
+    <h1>English Learning Hub</h1>
+    <nav>
+      <button onclick="showSection('word')">Word of the Day</button>
+      <div class="dropdown">
+        <button>IELTS Practice</button>
+        <div class="dropdown-content">
+          <a href="..\html\listening.html">Listening Practice</a>
+          <a href="..\html\reading.html">Reading Practice</a>
+          <a href="..\html\tailieuielts.html">Tài liệu IELTS</a>
+          <a href="suggest.html">Ngữ pháp cơ bản</a>
+        </div>
+      </div>
+      <button onclick="showSection('vocab')">Vocabulary by Topic</button>
+      <button onclick="showSection('quiz')">Quiz</button>
+      
+    </nav>
+  </header>
+
+  <main>
+    <section id="topic-selection">
+      <h2>Choose a Topic</h2>
+      <div class="topics">
+        <button onclick="showVocabulary('art')">Art</button>
+        <button onclick="showVocabulary('education')">Education</button>
+        <button onclick="showVocabulary('health')">Health</button>
+        <button onclick="showVocabulary('tourism')">Tourism</button>
+        <button onclick="showVocabulary('government')">Government</button>
+        <button onclick="showVocabulary('society')">Society</button>
+        <button onclick="showVocabulary('technology')">Technology</button>
+        <button onclick="showVocabulary('environment')">Environment</button>
+      </div>
+    </section>
+
+    <section id="vocabulary-list" style="display: none;">
+      <h2 id="topic-title"></h2>
+      <div class="vocabulary-grid" id="vocabulary-grid"></div>
+      <button onclick="goBack()">Back to Topics</button>
+    </section>
+  </main>
+
+  <script src="..\js\script.js"></script>
+</body>
+</html>
