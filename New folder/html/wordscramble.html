@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Scramble Game</title>
+  <link rel="stylesheet" href="../css/ws.css">
+  <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <style>
+        body {background-image:url("../images/bg.PNG"); /* Ảnh nền */
+        
+          background-repeat: no-repeat; /* Không lặp lại ảnh */
+      background-position: center;  /* Căn giữa ảnh */
+      background-size: cover;      /* Phóng to ảnh cho vừa màn hình */
+      height: 100vh;               /* Chiều cao của trang chiếm toàn bộ màn hình */
+      margin: 0;                  }
+      </style>
+
+    <header>
+   
+        <h1>English Learning Hub</h1>
+        <nav>
+          <button onclick="showSection('word')">Word of the Day</button>
+    
+          <div class="dropdown">
+            <button>IELTS Practice</button>
+            <div class="dropdown-content">
+              <a href="..\html\listening.html">Listening Practice</a>
+              <a href="..\html\reading.html">Reading Practice</a>
+              <a href="..\html\ielts-docs.html">Tài liệu IELTS</a>
+              <a href="..\html\ielts-docs.html">Các nguồn học IELTS hiệu quả</a>
+            </div>
+          </div>
+            
+          <button onclick="showSection('vocab')">Vocabulary by Topic</button>
+          <button onclick="showSection('quiz')">Quiz</button>
+          <button onclick="showSection('game')">Word Scramble</button>
+          
+        
+    
+        </nav>
+      </header> 
+      <h1 class="title">Word Scramble</h1>
+      <div class="word-scramble-container">
+        <div class="game-area">
+          <p id="word-hint"></p> <!-- Hiển thị từ gợi ý -->
+          <input type="text" id="user-input" placeholder="Nhập câu trả lời..." />
+          <button class="btn" id="submit-btn">Kiểm tra</button>
+          <button class="btn" id="new-word-btn">Từ mới</button>
+        </div>
+        <p class="feedback"></p>
+      </div>
+  <script src="../js/script.js"></script>
+</body>
+</html>
